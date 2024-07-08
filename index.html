@@ -4,36 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Web portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
     <nav>
-        <!--liste-->
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <!--liste navigation-->
+        <ul class="navligne">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 </header>
-<!--début sections-->
-    <section id="about">
-        <img src="assets/me.jpeg" alt="mine">
-
-    </section>
+<!--début section (4 parties)-->
+   <section class="about">
+    <!-- début premiere section -->
+        <div class="info">  <!--premier div-->
+            <h1>A PROPOS</h1>
+            <p>Etudiante en L3ANUM, j'ai decidé de faire une formation en developpement Web 
+                <br>étant une passionnée à la création de page web. Voici une 3e 
+                <br>orem ipsum dolor sit amet consectetur adipisicing elit.
+                <br> Officia aliquid non ullam sunt cupiditate magnam dolor perferendis quas, 
+                <br>amet illum ipsum culpa quibusdam vitae 
+                <br>eveniet dolores aspernatur natus est distinctio
+                <br>Vous pouvez Télécharger mon CV en cliquant ici:<a href="CV.pdf" download="cv.pdf" class="cv"> Télécharger</a>
+            </p>
+        </div>
+        <div class="image"> <!--deuxieme div-->
+            <img src="assets/me.jpeg" alt="">
+        </div>
+   </section>
+<!-- FIN première section -->
+ <!-- début 2nde section -->
     <section id="work">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vGtEV0tl4ww?si=6rWdDIT0WOSq_AKy&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lNAHaN7hBVw?si=oPCSvxC3kqLNJ7AZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
-    <section id="resume">
-        <a href="CV.pdf" download="cv.pdf">CV</a>
-        <h1>Hello!!!</h1>
-        <h2>It's Mame Diarra</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Officia aliquid non ullam sunt cupiditate magnam dolor perferendis quas, 
-             amet illum ipsum culpa quibusdam vitae 
-            eveniet dolores aspernatur natus est distinctio!</p>
+    <!--Fin 2nde section-->
+    <!-- début 3e section -->
+    <section class="resume">
+        <div class="portf">
+            <h1>Bienvenue dans mon portfolio!!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br>Officia aliquid non ullam sunt cupiditate magnam dolor perferendis quas, 
+                <br>amet illum ipsum culpa quibusdam vitae 
+                <br>eveniet dolores aspernatur natus est distinctio!</p>
+        </div>
     </section>
+    <!-- Fin 3e section -->
+      <!-- Debut 4e section -->
     <section id="contact">
         <!--formulaire-->
         <form action="">
@@ -46,21 +68,20 @@
             <label for="">Tel</label>
             <input type="tel" placeholder="Telephone">
             <textarea  placeholder="Votre Message ici"></textarea>
-            <button>Envoyer</button>
+            <button type="submit">Envoyer</button>
         </form>
     </section>
 <!--fin sections-->
     <!--début partie footer-->
-        <footer>
-            <h4>Suivez-nous sur : </h4>
-            <a href="https://www.facebook.com/" target="_blank" class="fond" alt="Suivez-nous sur facebook" ><i class="fa-brands fa-facebook"></i>facebook</a>
-            <br> <a href="https://instagram.com/" target="_blank" class="fond" alt="Suivez-nous sur instagram"><i class="fa-brands fa-instagram"></i> instagram</a>
-            <br> <a href="https://twitter.com/" target="_blank" class="fond" alt="Suivez-nous sur twitter" ><i class="fa-brands fa-twitter"></i>twitter</a>
+        <footer class="bas">
+            <h2>Suivez-nous sur : </h2>
+            <a href="https://snapchat.com/t/BTL5qtHt" target="_blank" class="fond" alt="Suivez-nous sur snapchat" ><i class="fa-brands fa-square-snapchat"></i> snapchat</a>
+            <br> <a href="https://www.instagram.com/mame_diarra_ngane?igsh=MWsweTR4czdhZno5ZA%3D%3D&utm_source=qr" target="_blank" class="fond" alt="Suivez-nous sur instagram"><i class="fa-brands fa-instagram"></i> instagram</a>
+            <br> <a href="https://x.com/diarra_ngane?s=21" target="_blank" class="fond" alt="Suivez-nous sur X" ><i class="fa-brands fa-twitter"></i> X</a>
         </footer>
         <!--fin partie footer-->
+        <!-- Pour les icons -->
         <script src="https://kit.fontawesome.com/ffbfc5fdd6.js" crossorigin="anonymous"></script>
-    
-
-
+        <p>&copy; 2024 SDSALIOU.</p>
 </body>
 </html>
