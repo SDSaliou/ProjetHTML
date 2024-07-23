@@ -1,18 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: mediumpurple;
+    padding: 4px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 2px;
+    z-index: 1000;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navligne {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    margin-top: 8px;
+    padding: 0;
 }
 
 .navligne li {
-    margin-right: 10px;
+    margin-right: 2px;
 }
 
 .navligne li a {
     text-decoration: none;
     color: mediumpurple;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -21,61 +47,82 @@
     background-color: #f0f0f0;
 }
 
-header {
-    
-    color:gray;
-    padding: 15px 0;
+nav h3 {
+    color: purple;
+    text-align: start;
 }
 
-.about{
+.bod {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .4)), url('assets/me.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px; /* Pour compenser la hauteur du header */
+    padding: 20px;
+}
+
+.about {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    max-width: 600px;
     gap: 3rem;
+    padding: 20px;
+    background-color: mediumpurple;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+.info h1 {
+    color: black;
+}
+.info a {
+    color: blue;
+    font: 1.25em sans-serif;
 }
 
-.about .info{
-    background-color: gray;
-    
+.about .info {
+    max-width: 600px;
+    text-align: left;
 }
-.resume .portf{
-    justify-content: center;
-    align-items: center;
+.resume {
     display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    gap: 1rem;
+    padding: 20px;
+    background-color: mediumpurple;
+    color: whitesmoke;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
 }
-.about .image img{
-    width: 300px;
-    height: 400px;
-}
-
-
-.work {
-    margin-bottom: 20px;
+.portf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 25px auto;
     text-align: left;
+    background: mediumpurple;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
-}
-.cv{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .1)), url('img/pageAcc.png');
-    background-size: cover;
-    background-position: center;
-    padding: 0 8%;
-       
+    color: whitesmoke;
+    font: 1em sans-serif;
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -84,11 +131,12 @@ form input, form textarea {
 
 button {
     padding: 10px 20px;
-    background: #333;
+    background: purple;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 button:hover {
@@ -97,22 +145,33 @@ button:hover {
 
 footer {
     background: white;
-    color: #fff;
+    color: mediumpurple;
     text-align: center;
     padding: 10px 0;
-    
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
 }
+
 .bas {
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
 }
 
 .bas a {
-    margin-right: 10px;
     text-decoration: none;
     color: mediumpurple;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 15px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.bas a:hover {
+    background-color: #f0f0f0;
 }
